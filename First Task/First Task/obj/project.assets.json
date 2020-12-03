@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\First Task\\First Task\\First Task.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\work1\\First Task\\First Task\\First Task.csproj",
       "projectName": "First Task",
-      "projectPath": "C:\\Users\\User\\source\\repos\\First Task\\First Task\\First Task.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\work1\\First Task\\First Task\\First Task.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\First Task\\First Task\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\work1\\First Task\\First Task\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
