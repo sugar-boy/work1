@@ -14,8 +14,10 @@ namespace First_Task
             Stopwatch time = new Stopwatch();
 
             // объявляем две переменные: первая делимое, вторая делитель
+            Console.Write("Введите делимое: ");
             double firstNumber = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("/");
+            Console.Write("Введите частное: ");
             double secondNumber = Convert.ToDouble(Console.ReadLine());
 
             // начинаем отсчет времени
@@ -24,13 +26,14 @@ namespace First_Task
             // нахождение частного
             double result = firstNumber / secondNumber;
 
+
             // условная конструкция if else используется для корректировки результата вычислений по правилам математики и вывода результата на печать
             if (result > 0)
                 // если результат больше 0, округляем в меньшую сторону
-                Console.WriteLine(Math.Round(result, MidpointRounding.ToEven));
+                Console.WriteLine($"Частное: {Math.Round(result, MidpointRounding.ToEven)}");
             else
                 // если результат меньше 0, округляем "дальше от нуля до целого числа", тоесть в большую сторону
-                Console.WriteLine(Math.Round(result, MidpointRounding.AwayFromZero));
+                Console.WriteLine($"Частное: {Math.Round(result, MidpointRounding.AwayFromZero)}");
             
             // заканчиваем осчет времени
             time.Stop();
@@ -38,6 +41,8 @@ namespace First_Task
             // выводим на консоль полученные результаты по времени и памяти
             Console.WriteLine($"Выделенный объем памяти: {workingSet} байт");
             Console.WriteLine($"Затраченное время: {time.Elapsed}");
+            Console.WriteLine("Нажмите Enter для закрытия проекта.");
+            Console.ReadLine();
             
         }
     }
