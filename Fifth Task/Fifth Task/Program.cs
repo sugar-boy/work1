@@ -9,13 +9,15 @@ namespace Fifth_Task
         {
             int number = Convert.ToInt32(Console.ReadLine());
             string[] numbers = new string[2];
+            List<string> arr = new List<string>();
             string str = "";
 
-            while(numbers[0] != "0" && numbers[1] != "0")
+            while(str != "0 0")
             {
                 str = Console.ReadLine();
-                numbers = Console.ReadLine().Split(' ');
+                arr.Add(str);
             }
+
         }
     }
 }
