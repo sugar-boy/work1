@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Numerics;
 
 namespace First_Task
 {
@@ -9,7 +10,7 @@ namespace First_Task
         {
             // заводим переменную для вычисления объема выделенной памяти
             long workingSet = Process.GetCurrentProcess().WorkingSet64;
-
+            
             // объявляем класс, используемый для вычисления затраченного времени
             Stopwatch time = new Stopwatch();
 
@@ -17,7 +18,7 @@ namespace First_Task
             Console.Write("Введите делимое: ");
             double firstNumber = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("/");
-            Console.Write("Введите частное: ");
+            Console.Write("Введите делитель: ");
             double secondNumber = Convert.ToDouble(Console.ReadLine());
 
             // начинаем отсчет времени
@@ -26,9 +27,10 @@ namespace First_Task
             // нахождение частного
             double result = firstNumber / secondNumber;
 
+            Console.Write("Результат вычислений: ");
             if (result > 0)
                 // если результат положительное число, то при приведении к типу (int) произойдет округление в меньшую сторону
-                Console.WriteLine((int)result);
+                Console.WriteLine((BigInteger)result);
             else
                 // Если результат отрицателен, то мы действуем по следующему алгоритму
                 // Разберем такой пример, первое число -27, второе 10
