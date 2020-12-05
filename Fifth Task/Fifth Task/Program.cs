@@ -18,6 +18,8 @@ namespace Fifth_Task
                 arr.Add(str);
             }
 
+
+
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Fourth_Task
             int m = Convert.ToInt32(array[1]);
 
             time.Start();
+            // вызываем метод для нахождения периода и результат сохраняем
             string str = getPeriod(n, m);
             time.Stop();
 
@@ -48,13 +49,14 @@ namespace Fourth_Task
                 // неправильная дробь. вычисляем дробную часть 
                 float rest = x - numerator / denominator;
 
+                // добавляем строку с целой частью к нашему экземпляру
                 s.Append(dev.ToString());
 
                 if (rest > 0)
                 {
                     // остаток > 0,  уменьшаем numerator и ищем период
                     numerator -= dev * denominator;
-
+                    // добавляем дробную часть
                     s.Append("," + GetFraction(numerator, denominator));
                 }
             }
@@ -83,7 +85,7 @@ namespace Fourth_Task
             while (n != numerator);
 
             int[] period = new int[k];
-            // записываем период
+            // записываем период в новый массив длинной k
             for (n = 0; n < k; ++n)
             {
                 period[n] = digits[n];
